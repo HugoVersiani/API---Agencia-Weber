@@ -1,0 +1,15 @@
+{
+    "name": "hugov/teste-agencia-weber",
+    "autoload": {
+        "psr-4": {
+            "Hugov\\TesteAgenciaWeber\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hugo Versiani",
+            "email": "hugoversiani@live.com"
+        }
+    ],
+    "require": {}
+}
