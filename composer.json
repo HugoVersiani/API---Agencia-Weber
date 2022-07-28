@@ -2,8 +2,11 @@
     "name": "hugov/teste-agencia-weber",
     "autoload": {
         "psr-4": {
-            "Hugov\\TesteAgenciaWeber\\": "src/"
-        }
+            "App\\": "App/"
+        },
+        "files": [
+        	"config.php"
+        ]
     },
     "authors": [
         {
