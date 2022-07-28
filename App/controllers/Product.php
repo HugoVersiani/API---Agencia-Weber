@@ -3,11 +3,6 @@
     use App\models\Products;
 
     class Product {
-        
-        public function returnAllProducts($id = null) 
-        {
-           
-        }
 
         public function addProduct() {
             $data = json_decode(file_get_contents("php://input"), true);
@@ -19,6 +14,12 @@
             $data = json_decode(file_get_contents("php://input"), true);
             $sendUpdate = Products::editProductById($data);
             return $sendUpdate;
+        }
+
+        public function deleteProductById() {
+            $data = json_decode(file_get_contents("php://input"), true);
+            $delete = Products::deleteProductById($data);
+            return $delete;
         }
 
     }
