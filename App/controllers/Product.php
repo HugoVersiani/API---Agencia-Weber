@@ -22,4 +22,9 @@
             return $delete;
         }
 
+        public function getProductsByCategory() {
+            $Products = Products::getProductsByCategory();
+            return $Products;
+        }
+
     }

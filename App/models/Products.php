@@ -53,4 +53,20 @@
   
         }
 
+        public static function getProductsByCategory() {
+            $connPdo = new \PDO(DBDRIVE.': host='.DBHOST.'; dbname='.DBNAME, DBUSER, DBPASS);
+            $sql = 'SELECT product.name, product.price, product.image, category.name as category FROM category
+                    INNER JOIN product ON
+                    product.category_id = category.id';
+            $stmt = $connPdo->prepare($sql);
+            $stmt->execute();
+            if ($stmt->rowCount() > 0) {  
+                return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            } else {
+                throw new \Exception("Não foi possivel encontrar os produtos");
+            }
+        }
+
+
+
     }
