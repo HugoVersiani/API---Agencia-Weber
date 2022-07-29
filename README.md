@@ -20,7 +20,7 @@ A API conta com 7 endpoints/funções sendo elas:
 **login:** <br/>
 Faz login por JWT;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"email":"teste@gmail.com",
 	"password":"123"
@@ -31,7 +31,7 @@ Recebe:
 **addCategory:** <br/>
 Adiciona uma nova categoria ao catálogo;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"name":"carnes",
 	"description":"carnes deliciosamente boas!!"
@@ -42,7 +42,7 @@ Recebe:
 **addProduct:** <br/>
 Edita uma categoria do catalogo;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"id":0,
 	"name":"Frutos do Mar",
@@ -55,7 +55,7 @@ Recebe:
 **addProduct:** <br/>
 Adiciona um novo produto ao catalogo;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"name":"Alface com rucula",
 	"price":99.00,
@@ -68,7 +68,7 @@ Recebe:
 **editProductById:** <br/>
 Edita um produto;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"id":2,
 	"name":"lagostinha",
@@ -84,7 +84,7 @@ Recebe:
 **deleteProductById:** <br/>
 Deleta um produto do catalogo;<br/>
 Método: POST;
-Recebe:
+Recebe:<br/><br/>
 {
 	"id":1
 }
