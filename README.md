@@ -6,7 +6,7 @@
 -Também decidi fazer em PHP puro utilizando o composer/psr4;<br/>
 -Para rodar a api localmente utilizei o xampp. E o Insomnia para realizar requisições;<br />
 -Criei uma autenticação por JTW porém optei por não bloquear os endpoints pra facilitar os testes</br>
--Arquivos nomeados no plural = model;
+-Arquivos nomeados no plural = model;<br/>
 -Arquivos nomeados no singular = controller;
 
 
